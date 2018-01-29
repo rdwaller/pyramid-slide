@@ -1,6 +1,6 @@
 
 body {
-  background-color: #FAFAFA
+  background-color: #FAFAFA;
 }
 
 h1 {
@@ -12,20 +12,39 @@ h1 {
   background-color: #AA5588;
 }
 
+#brick_selector_content {
+  padding: 10px;
+}
+
+#height_selector_content {
+  padding: 10px;
+}
+
 #brick_selector {
   font-family: "Courier New", Courier, monospace;
   color: black;
   font-weight: bold;
   font-size: 1.2em;
+  padding: 4px;
 }
 
 #selection {
-  padding: 50px 100px;
+  padding: 25px 50px;
   font-family: "Courier New", Courier, monospace;
   color: black;
   font-weight: normal;
   font-size: 1.2em;
   background-color: #CCCCCC;
+  align-content: right;
+}
+
+#selection_table {
+  margin: auto;
+}
+
+#pyramid {
+  text-align: center;
+  padding: 25px;
 }
 
 #pyramid > p {
@@ -36,5 +55,9 @@ h1 {
 }
 
 #content {
-  padding: 50px 200px;
+  background-color: #EEEEEE;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #AA5588;
+  margin: 25px 75px;
 }
