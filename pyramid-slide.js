@@ -1,11 +1,11 @@
 
 var height_slider = document.getElementById('height_slider');
-var height = height_slider.value
-var height_count = document.getElementById('height_count')
-height_count.innerHTML = height_slider.value
-var brick_selector = document.getElementById('brick_selector')
-var brick = brick_selector.value
-var pyramid = document.getElementById('pyramid')
+var height = height_slider.value;
+var height_count = document.getElementById('height_count');
+height_count.innerHTML = height_slider.value;
+var brick_selector = document.getElementById('brick_selector');
+var brick = brick_selector.value;
+var pyramid = document.getElementById('pyramid');
 
 function generate_pyramid(height) {
   document.getElementById('pyramid').innerHTML = '';
@@ -14,13 +14,12 @@ function generate_pyramid(height) {
     var numSpaces = height - row - 1;
     var rowStr = ''
     for (var i = 0; i < numSpaces; i++) {
-      var spaceChar = "&nbsp";
-      rowStr += spaceChar;
+      rowStr += "&nbsp";
     }
     for (var i = 0; i < numBricks; i++) {
       rowStr += brick;
     }
-    rowElem = document.createElement('p')
+    rowElem = document.createElement('p');
     document.getElementById('pyramid').appendChild(rowElem);
     rowElem.innerHTML = rowStr;
   }
